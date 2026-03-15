@@ -41,6 +41,7 @@ credit-risk-platform/
 │   └── train_model.py
 ├── requirements.txt
 └── README.md
+```
 
 ## System Architecture
 
@@ -58,6 +59,7 @@ Prediction Script
 FastAPI Endpoint
         ↓
 Client Request → Default Risk Prediction
+```
 
 ## Model Performance
 
