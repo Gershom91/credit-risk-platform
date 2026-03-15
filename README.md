@@ -41,3 +41,32 @@ credit-risk-platform/
 │   └── train_model.py
 ├── requirements.txt
 └── README.md
+
+## System Architecture
+
+```text
+Data (Kaggle Credit Dataset)
+        ↓
+Data Cleaning & Feature Engineering
+        ↓
+Model Training (XGBoost)
+        ↓
+Saved Model (.pkl)
+        ↓
+Prediction Script
+        ↓
+FastAPI Endpoint
+        ↓
+Client Request → Default Risk Prediction
+
+## Model Performance
+
+| Model | ROC-AUC | Recall | F1 Score |
+|------|------|------|------|
+| Logistic Regression | 0.83 | 0.74 | 0.29 |
+| Random Forest | 0.84 | 0.15 | 0.24 |
+| XGBoost | 0.87 | 0.69 | 0.38 |
+
+### Final Model Selection
+
+XGBoost was selected as the final model because it achieved the best overall ROC-AUC while maintaining strong recall for detecting high-risk borrowers.
