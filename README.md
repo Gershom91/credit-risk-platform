@@ -69,6 +69,17 @@ Client Request → Default Risk Prediction
 | Random Forest | 0.84 | 0.15 | 0.24 |
 | XGBoost | 0.87 | 0.69 | 0.38 |
 
+### Feature Importance
+
+![Feature Importance](reports/feature_importance.png)
+
 ### Final Model Selection
 
 XGBoost was selected as the final model because it achieved the best overall ROC-AUC while maintaining strong recall for detecting high-risk borrowers.
+
+## API Demo
+
+The trained model is deployed using FastAPI.  
+Below is an example prediction request and response.
+
+![API Demo](reports/api_demo.png)
